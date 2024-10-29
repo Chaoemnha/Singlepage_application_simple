@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lookbook</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .wrapper {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 300px;
+
+        }
+
+        .wrapper>img {
+            display: block;
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .wrapper>.overlay {
+            position: absolute;
+            inset: 0;
+            padding: 1rem;
+            background: rgba(225, 225, 225, .4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wrapper>img,
+        .wrapper>.content {
+            transition: 200ms ease-in-out
+        }
+
+        .wrapper>.overlay {
+            opacity: 0;
+        }
+
+        .wrapper:hover>.overlay {
+            opacity: 1;
+        }
+
+        .iconic {
+            color: azure;
+            margin: 5px
+        }
+
+        .high {
+            width: 100%;
+            height: 300px;
+            position: relative;
+        }
+
+        .text {
+            position: absolute;
+            top: 3%;
+            left: 3%;
+            width: 38%;
+            line-height: normal;
+        }
+
+        .ima {
+            width: 100%;
+            height: 300px;
+            position: relative;
+        }
+
+        .content1 {
+            position: absolute;
+            top: 3%;
+            left: 5%;
+            width: 40%;
+            line-height: normal;
+        }
+
+        .text_2 {
+            color: rgb(0, 200, 200);
+            position: absolute;
+            top: 3%;
+            right: 3%;
+            width: 45%;
+            line-height: normal;
+            text-align: right;
+        }
+
+        .win {
+            font-size: 120px;
+            font-weight: bold;
+        }
+
+        .a {
+            font-size: 52px;
+            font-weight: 500;
+        }
+
+        .ima>img {
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
+
+        .empty {
+            background-color: rgb(0, 200, 200);
+        }
+
+        .text_1 {
+            position: absolute;
+            top: 10%;
+            right: 14%;
+            width: 50%;
+            line-height: normal;
+            text-align: right;
+        }
+
+        #footer {
+            background-color: whitesmoke;
+
+        }
+
+        i {
+            margin: 5px;
+        }
+
+        .txt_h2_footer {
+            font-family: font_mont_rgl;
+            font-size: 13px;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 35px;
+        }
+
+        li {
+            font-family: font_roboto_rgl;
+            font-size: 13px;
+            color: #999999;
+            margin-right: 20px;
+        }
+
+        li a {
+            font-family: font_roboto_rgl;
+            font-size: 13px;
+            color: #999999;
+        }
+
+        .dropdown-item {
+            padding-left: 0 !important;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: none !important;
+        }
+
+        #footer_end_1,
+        #footer_end_2 {
+            margin-top: 20px;
+            height: 200px;
+            font-size: 36px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        /* singup */
+        .txt_h2_singup {
+            font-family: font_mont_rgl;
+            font-size: 18px;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        .txt_p_singup {
+            font-family: font_roboto_rgl;
+            font-size: 13px;
+            color: #999999;
+            margin-top: 16px;
+        }
+
+        @media only screen and (max-width: 100%) {
+
+            #footer {
+                text-align: center;
+            }
+        }
+
+        @media only screen and (max-width: 540px) {
+
+            #footer {
+                text-align: center;
+            }
+        }
+
+        @media only screen and (max-width: 720px) {
+
+            #footer {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid bg-dark ">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-6 col-md12 col-sm-12 col-xs-12">
+                    <nav class="navbar navbar-expand-sm  p-0 align-items-center">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item">
+                                <p class="after1 nav-link pl-3 m-0 text-secondary">Curentcy: <select
+                                        class="text-secondary border-0 bg-dark p-0">
+                                        <option value="dpb" class="p-0">DPB</option>
+                                        <option value="gpd">GPD</option>
+                                        <option value="cms">CMS</option>
+                                    </select></p>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-xl-1 col-lg-1 col-md12 col-sm-12 col-xs-12">
+                    <a class="nav-link text-secondary" href="sing up.html">Register</a>
+                </div>
+                <div class="col-xl-1 col-lg-1 col-md12 col-sm-12 col-xs-12">
+                    <a class="nav-link text-secondary" style="width: 82px !important;" href="sing up.html">Sign in</a>
+                </div>
+                <div class="col-xl-1 col-lg-1 col-md12 col-sm-12 col-xs-12">
+                    <nav class="navbar navbar-expand-sm  p-0 align-items-center">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item">
+                                <p class="after1 nav-link m-0 text-secondary" style="width: 116px !important;"><i
+                                        class="fa-solid fa-cart-shopping"></i>
+                                    <select class="text-secondary border-0 bg-dark p-0">
+                                        <option value="dpb" class="p-0">empty</option>
+                                    </select>
+                                </p>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-sm justify-content-around">
+        <a class="navbar-brand" href="#">
+            <a href=""><b>AVENUE</b> FASHION</a>
+        </a>
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-dark" data-toggle="dropdown" href="#"
+                    id="toblue1"><b>MENS</b></a>
+                <div class="dropdown-menu">
+                    <div class="d-flex">
+                        <div>
+                            <h5 class="dropdown-item ">CASUALS</h5>
+                            <a class="dropdown-item" href="#">Jacket</a>
+                            <a class="dropdown-item" href="#">Hoodie&Sweatshirt</a>
+                            <a class="dropdown-item" href="#">Poloshirt</a>
+                            <a class="dropdown-item" href="#">Sportswear</a>
+                            <a class="dropdown-item" href="#">Trousera&Chinos</a>
+                        </div>
+                        <div>
+                            <h5 class=" dropdown-item">FORMAL</h5>
+                            <a class="dropdown-item" href="#">Jackets</a>
+                            <a class="dropdown-item" href="#">Shirts</a>
+                            <a class="dropdown-item" href="#">Suits</a>
+                            <a class="dropdown-item" href="#">Trousers</a>
+                        </div>
+                    </div>
+                    <div class="text-center text-white dropdown-item">
+                        <div class="bg-dark p-4">
+                            <p class="h4"><b>AUTUMN SALE!</b></p>
+                            <p class="h4">UP TO 50% OFF</p>
+                        </div>
+                    </div>
+
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-dark" data-toggle="dropdown" href="#"
+                    id="toblue1"><b>WOMENS</b></a>
+                <div class="dropdown-menu">
+                    <div class="d-flex">
+                        <div>
+                            <h5 class="dropdown-item ">CASUALS</h5>
+                            <a class="dropdown-item" href="#">Jacket</a>
+                            <a class="dropdown-item" href="#">Hoodie&Sweatshirt</a>
+                            <a class="dropdown-item" href="#">Poloshirt</a>
+                            <a class="dropdown-item" href="#">Sportswear</a>
+                            <a class="dropdown-item" href="#">Trousera&Chinos</a>
+                        </div>
+                        <div>
+                            <h5 class=" dropdown-item">FORMAL</h5>
+                            <a class="dropdown-item" href="#">Jackets</a>
+                            <a class="dropdown-item" href="#">Shirts</a>
+                            <a class="dropdown-item" href="#">Suits</a>
+                            <a class="dropdown-item" href="#">Trousers</a>
+                        </div>
+                    </div>
+                    <div class="text-center text-white dropdown-item">
+                        <div class="bg-dark p-4">
+                            <p class="h4"><b>AUTUMN SALE!</b></p>
+                            <p class="h4">UP TO 50% OFF</p>
+                        </div>
+                    </div>
+
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-dark" data-toggle="dropdown" href="#" id="toblue1"><b>THE
+                        BRAND</b></a>
+                <div class="dropdown-menu">
+                    <div class="d-flex">
+                        <div>
+                            <h5 class="dropdown-item ">CASUALS</h5>
+                            <a class="dropdown-item" href="#">Jacket</a>
+                            <a class="dropdown-item" href="#">Hoodie&Sweatshirt</a>
+                            <a class="dropdown-item" href="#">Poloshirt</a>
+                            <a class="dropdown-item" href="#">Sportswear</a>
+                            <a class="dropdown-item" href="#">Trousera&Chinos</a>
+                        </div>
+                        <div>
+                            <h5 class=" dropdown-item">FORMAL</h5>
+                            <a class="dropdown-item" href="#">Jackets</a>
+                            <a class="dropdown-item" href="#">Shirts</a>
+                            <a class="dropdown-item" href="#">Suits</a>
+                            <a class="dropdown-item" href="#">Trousers</a>
+                        </div>
+                    </div>
+                    <div class="text-center text-white dropdown-item">
+                        <div class="bg-dark p-4">
+                            <p class="h4"><b>AUTUMN SALE!</b></p>
+                            <p class="h4">UP TO 50% OFF</p>
+                        </div>
+                    </div>
+
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-dark" data-toggle="dropdown" href="#" id="toblue1"><b>LOCAL
+                        STORES</b></a>
+                <div class="dropdown-menu">
+                    <div class="d-flex">
+                        <div>
+                            <h5 class="dropdown-item ">CASUALS</h5>
+                            <a class="dropdown-item" href="#">Jacket</a>
+                            <a class="dropdown-item" href="#">Hoodie&Sweatshirt</a>
+                            <a class="dropdown-item" href="#">Poloshirt</a>
+                            <a class="dropdown-item" href="#">Sportswear</a>
+                            <a class="dropdown-item" href="#">Trousera&Chinos</a>
+                        </div>
+                        <div>
+                            <h5 class=" dropdown-item">FORMAL</h5>
+                            <a class="dropdown-item" href="#">Jackets</a>
+                            <a class="dropdown-item" href="#">Shirts</a>
+                            <a class="dropdown-item" href="#">Suits</a>
+                            <a class="dropdown-item" href="#">Trousers</a>
+                        </div>
+                    </div>
+                    <div class="text-center text-white dropdown-item">
+                        <div class="bg-dark p-4">
+                            <p class="h4"><b>AUTUMN SALE!</b></p>
+                            <p class="h4">UP TO 50% OFF</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-dark" data-toggle="dropdown" href="#"
+                    id="toblue1"><b>LOOKBOOK</b></a>
+                <div class="dropdown-menu">
+                    <div class="d-flex">
+                        <div>
+                            <h5 class="dropdown-item ">CASUALS</h5>
+                            <a class="dropdown-item" href="#">Jacket</a>
+                            <a class="dropdown-item" href="#">Hoodie&Sweatshirt</a>
+                            <a class="dropdown-item" href="#">Poloshirt</a>
+                            <a class="dropdown-item" href="#">Sportswear</a>
+                            <a class="dropdown-item" href="#">Trousera&Chinos</a>
+                        </div>
+                        <div>
+                            <h5 class=" dropdown-item">FORMAL</h5>
+                            <a class="dropdown-item" href="#">Jackets</a>
+                            <a class="dropdown-item" href="#">Shirts</a>
+                            <a class="dropdown-item" href="#">Suits</a>
+                            <a class="dropdown-item" href="#">Trousers</a>
+                        </div>
+                    </div>
+                    <div class="text-center text-white dropdown-item">
+                        <div class="bg-dark p-4">
+                            <p class="h4"><b>AUTUMN SALE!</b></p>
+                            <p class="h4">UP TO 50% OFF</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="jumbotron jumbotron-fluid text-center">
+        <h1><b>OUR</b> LOOKBOOK</h1>
+        <p>LATEST POSTS - MENS & WOMENS</p>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <nav class="navbar navbar-expand-md ">
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav navbar-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="">LATEST</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">MOST LIKED</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">BEST SELLERS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">PRICE LOW TO HIGH</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">PRICE HIGH TO LOW</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                <div class="wrapper ">
+                    <img src="../Image/4-Lookbook1.jpg" alt="">
+                    <div class="overlay ">
+                        <a href=""> <i class="fa-solid fa-circle-info iconic"></i></a>
+                        <a href=""><i class="fa-solid fa-shield-heart iconic"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                <div class="wrapper">
+                    <img src="../Image/4-Lookbook2.jpg" alt="">
+                    <div class="overlay">
+                        <a href=""> <i class="fa-solid fa-circle-info iconic"></i></a>
+                        <a href=""><i class="fa-solid fa-shield-heart iconic"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                <img class="ima" src="../Image/4-Lookbook3.jpg" alt="">
+                <div class="content1">
+                    <p style="font-size: 30px;"><b>JANE'S</b> LOOKBOOK</p>
+                    <p style="font-size: 10px;">GET THE LOOK FOR UNDER <i class="fa-solid fa-sterling-sign"
+                            style="color: #8d8e8e;"></i>200
+                    </p>
+                    <p style="font-size: 12px;">We invited actress Jane Marshall to join us for the day and choose her
+                        perfect outfit from
+                        our
+                        vast
+                        range of womens fashion.</p>
+                    <p style="font-size: 12px;">This is of course not true as this is just a design for a website</p>
+                    <button class="btn btn-outline-dark mr-4" id="toblue">VIEW NOW</button>
+                </div>
+            </div>
+        </div> <br> <br>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                <div class="wrapper ">
+                    <img src="../Image/4-Lookbook4.jpg" alt="">
+                    <div class="overlay ">
+                        <a href=""> <i class="fa-solid fa-circle-info iconic"></i></a>
+                        <a href=""><i class="fa-solid fa-shield-heart iconic"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                <div class="wrapper ">
+                    <img src="../Image/4-Lookbook5.jpg" alt="">
+                    <div class="overlay ">
+                        <a href=""> <i class="fa-solid fa-circle-info iconic"></i></a>
+                        <a href=""><i class="fa-solid fa-shield-heart iconic"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                <div class="wrapper ">
+                    <img src="../Image/4-Lookbook6.jpg" alt="">
+                    <div class="overlay ">
+                        <a href=""> <i class="fa-solid fa-circle-info iconic"></i></a>
+                        <a href=""><i class="fa-solid fa-shield-heart iconic"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                <div class="wrapper ">
+                    <img src="../Image/4-Lookbook7.jpg" alt="">
+                    <div class="overlay ">
+                        <a href=""> <i class="fa-solid fa-circle-info iconic"></i></a>
+                        <a href=""><i class="fa-solid fa-shield-heart iconic"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div> <br> <br>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-9">
+                <img class="high" src="../Image/4-Lookbook8.jpg" alt="">
+                <div class="text">
+                    <p style="font-size: 30px;"><b>WIN</b> A NEW LOOK!</p>
+                    <p style="font-size: 10px;">ADD LOOKS OR ITEMS TO YOUR LOOKBOOK FOR A CHANCE OF WINNING</p>
+                    <p style="font-size: 12px;">See an item or a complete look you like, click the <i
+                            class="fa-regular fa-heart"></i> button to
+                        add
+                        it to your lookbook and you'll will be automatically entered to our monthly draw where one
+                        winner
+                        gets a <b><i class="fa-solid fa-sterling-sign"></i>300</b> gift voucher to spend on our
+                        website!
+                    </p>
+                    <p style="font-size: 12px;">Terms: No purchase necessary. Vouchers are non-transferable a no
+                        cash alternative is ofered.
+                        Competition is for members only</p>
+                    <button class="btn btn-outline-dark mr-4" id="toblue">SHOP NOW</button>
+                </div>
+                <div class="text_2">
+                    <p class="win">WIN</p>
+                    <p class="a">A NEW LOOK</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                <div class="wrapper ">
+                    <img src="../Image/4-Lookbook9.jpg" alt="">
+                    <div class="overlay ">
+                        <a href=""> <i class="fa-solid fa-circle-info iconic"></i></a>
+                        <a href=""><i class="fa-solid fa-shield-heart iconic"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-4 ima">
+                    <img src="../Image/4-Lookbook10.jpg" alt="">
+                    <div class="text_1">
+                        <p style="font-size: 30px;"><b>MEN'S</b> LOOKBOOK</p>
+                        <p style="font-size: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                            expedita
+                            vero id nemo
+                            distinctio.
+                            Corporis aspernatur ratione iusto reiciendis. Id facilis vitae aperiam corporis?</p>
+                        <button class="btn btn-outline-dark mr-4" id="toblue">VIEW NOW</button>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4  ima">
+                    <img src="../Image/4-Lookbook11.jpg" alt="">
+                    <div class="text_1">
+                        <p style="font-size: 30px;"><b>MEN'S</b> LOOKBOOK</p>
+                        <p style="font-size: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                            expedita
+                            vero id nemo
+                            distinctio.
+                            Corporis aspernatur ratione iusto reiciendis. Id facilis vitae aperiam corporis?</p>
+                        <button class="btn btn-outline-dark mr-4" id="toblue">VIEW NOW</button>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 ima">
+                    <img src="../Image/4-Lookbook.jpg" alt="">
+                    <div class="text_1">
+                        <p style="font-size: 30px;"><b>MEN'S</b> LOOKBOOK</p>
+                        <p style="font-size: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                            expedita
+                            vero id nemo
+                            distinctio.
+                            Corporis aspernatur ratione iusto reiciendis. Id facilis vitae aperiam corporis?</p>
+                        <button class="btn btn-outline-dark mr-4" id="toblue">VIEW NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bggray pt-5 pb-5 pl-5 pr-5 full">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <p><b>INFORMATION</b></p>
+                        <a id="link" class="d-block" href="#">The brand</a>
+                        <a id="link" href="#" class="d-block">Local stores</a>
+                        <a id="link" href="#" class="d-block">Customer service</a>
+                        <a id="link" href="#" class="d-block">Privacy & cookies</a>
+                        <a id="link" href="#" class="d-block">Site map</a>
+                    </div>
+                    <div class="col">
+                        <p id="link"><b>WHY BUY FROM US</b></p>
+                        <a id="link" href="#" class="d-block">Shipping & returns</a>
+                        <a id="link" href="#" class="d-block">Secure shopping</a>
+                        <a id="link" href="#" class="d-block">Testimonials</a>
+                        <a id="link" href="#" class="d-block">Award winning</a>
+                        <a id="link" href="#" class="d-block">Ethical trading</a>
+                    </div>
+                    <div class="col">
+                        <p><b>YOUR ACCOUNT</b></p>
+                        <a id="link" href="#" class="d-block">Sign in</a>
+                        <a id="link" href="#" class="d-block">Register</a>
+                        <a id="link" href="#" class="d-block">View cart</a>
+                        <a id="link" href="#" class="d-block">View your lookbook</a>
+                        <a id="link" href="#" class="d-block">Track an order</a>
+                        <a id="link" href="#" class="d-block">Update information</a>
+                    </div>
+                    <div class="col">
+                        <p><b>LOOKBOOK</b></p>
+                        <a id="link" href="#" class="d-block">Latest posts</a>
+                        <a id="link" href="#" class="d-block">Men's lookbook</a>
+                        <a id="link" href="#" class="d-block">Women's lookbook</a>
+                        <a id="link" href="#" class="d-block">Lookbook RSS feed</a>
+                        <a id="link" href="#" class="d-block">View your lookbook</a>
+                        <a id="link" href="#" class="d-block">Delete your lookbook</a>
+                    </div>
+                    <div class="col">
+                        <p><b>CONTACT DETAILS</b></p>
+                        <p>Head office: Avenue Fashion, 180-182 Regent Street London</p>
+                        <a id="link" href="tel:0123456789" class="d-block">Telephone: 0123-456-789</a>
+                        <a id="link" href="mailto:support@yourwebsite.com" class="d-block">Email:
+                            support@yourwebsite.com</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div
+                        class="col bg-dark text-white text-center p-3 mr-4 d-flex justify-content-center align-items-center flex-wrap">
+                        <p class="h2 full"><b>AWARD WINNER</b></p>
+                        <p class="h2">FASHION AWARDS 2016</p>
+                    </div>
+                    <div
+                        class="col bg-primary text-white text-center p-3 d-flex justify-content-center align-items-center">
+                        <p><i class="fa-brands fa-facebook-f h3 m-4"></i><i class="fa-brands fa-twitter h3 m-4"></i><i
+                                class="fa-brands fa-instagram h3 m-4"></i><i class="fa-brands fa-pinterest h3 m-4"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

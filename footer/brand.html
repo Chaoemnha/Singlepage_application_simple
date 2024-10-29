@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Brand</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #footer {
+            background-color: whitesmoke;
+
+        }
+
+        i {
+            margin: 5px;
+        }
+
+        .txt_h2_singup {
+            font-size: 18px;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        .txt_h2_footer {
+            font-size: 13px;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 35px;
+        }
+
+        li {
+            font-size: 13px;
+            color: #999999;
+            margin-right: 20px;
+        }
+
+        li a {
+            font-size: 13px;
+            color: #999999;
+        }
+
+        .dropdown-item {
+            padding-left: 0 !important;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: none !important;
+        }
+
+        #footer_end_1,
+        #footer_end_2 {
+            margin-top: 20px;
+            height: 200px;
+            font-size: 36px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        .bggray {
+            background-color: lightgrey;
+        }
+
+        .full {
+            width: 100%;
+            padding: 1vw;
+            margin: 5% 0;
+        }
+
+        @media only screen and (max-width: 540px) {
+
+            #footer {
+                text-align: center;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            .part_1 {
+                padding-left: 11.5%;
+                justify-content: left;
+            }
+
+            .part_2 {
+                padding-right: 11.5%;
+                justify-content: left;
+            }
+
+            ul,
+            p,
+            a {
+                font-size: 10px;
+            }
+
+            .h2,
+            .full b,
+            .h2 {
+                font-size: 20px;
+            }
+        }
+
+        @media only screen and (max-width: 720px) {
+
+            #footer {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid bg-dark ">
+        <div class="container">
+            <div class="d-flex">
+                <div class="mr-auto mt-1 p-2">
+                    <nav class="navbar navbar-expand-sm  p-0 align-items-center">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item">
+                                <p class="after1 nav-link m-0 text-secondary pl-3">Curentcy: <select
+                                        class="text-secondary border-0 bg-dark p-0">
+                                        <option value="dpb" class="p-0">DPB</option>
+                                        <option value="gpd">GPD</option>
+                                        <option value="cms">CMS</option>
+                                    </select></p>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="p-1 mr-2 align-self-center">
+                    <a href="#">Register</a>
+                </div>
+                <div class="p-1 align-self-center ">
+                    <a href="#">Sign
+                        in</a>
+                </div>
+                <div class="p-2">
+                    <nav class="navbar navbar-expand-sm  p-0 align-items-center">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item">
+                                <p class="after1 nav-link m-0 text-secondary">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <select class="text-secondary border-0 bg-dark p-0">
+                                        <option value="dpb" class="p-0">empty</option>
+                                    </select>
+                                </p>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-sm">
+        <a class="navbar-brand" href="#"><b>AVENUE</b> FASHION</a>
+        <button class="navbar-toggler navbar-toggler-right bg-white "
+            style="width: 30px !important;height: 30px !important;" type="button" data-toggle="collapse"
+            data-target="#collapsibleNavbar">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse mr-5" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-item dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">MENS</a>
+                    <div class="dropdown-menu p-3" id="drop">
+                        <div class="row justify-content-center">
+                            <div class="col-6 pr-3">
+                                <b>CASUALS</b>
+                                <ul>
+                                    <li><a class="dropdown-item" href="../html/lookbook.html">Jackets</a></li>
+                                    <li><a class="dropdown-item" href="../html/lookbook.html">Hoodies & Sweatshirts</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="../html/lookbook.html">Polo Shirt</a></li>
+                                    <li><a class="dropdown-item" href="../html/lookbook.html">Sportswear</a></li>
+                                    <li><a class="dropdown-item" href="../html/lookbook.html">Trousers & Chinos</a></li>
+                                    <li><a class="dropdown-item" href="../html/lookbook.html">T-Shirts</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <b>Formal</b>
+                                <ul>
+                                    <li><a class="dropdown-item" href="../html/lookbook.html">Jackets</a></li>
+                                    <li><a class="dropdown-item" href="../html/lookbook.html">Shirts</a></li>
+                                    <li><a class="dropdown-item" href="../html/lookbook.html">Suit</a></li>
+                                    <li><a class="dropdown-item" href="../html/lookbook.html">Trousers</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-11 bg-dark text-center text-white mt-2 p-3">
+                                AUTUMN SALE!<br> UP TO 50% OFF
+                            </div>
+
+                        </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-item dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">WOMENS</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-item dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">THE
+                        BRAND</a>
+                </li>
+                <li>
+                    <a href="../html/local stores.html">LOCAL STORES</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-item dropdown-toggle mr-5" href="#" id="navbardrop" data-toggle="dropdown">LOOK
+                        BOOK</a>
+                    <div class="dropdown-menu p-3" id="drop">
+                        <div class="row justify-content-center">
+                            <div class="col-6">
+                                <b>OUR LOOKBOOKS</b>
+                                <ul>
+                                    <li><a class="dropdown-item" href="../html/lookbook.html">Latest Posts (mixed)</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="../html/lookbook.html">Men's Lookbook</a></li>
+                                    <li><a class="dropdown-item" href="../html/lookbook.html">Women's Lookbook</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <b>YOUR LOOKBOOK</b>
+                                <ul>
+                                    <li><a class="dropdown-item" href="../html/lookbook.html">View and Edit</a></li>
+                                    <li><a class="dropdown-item" href="../html/lookbook.html">Share</a></li>
+                                    <li><a class="dropdown-item" href="../html/lookbook.html">Delete</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-11 bg-dark text-center text-white mt-2 p-3">
+                                AUTUMN SALE!<br> UP TO 50% OFF
+                            </div>
+                        </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control " id="search" type="text" placeholder="Search...">
+                <button class="btn btn-white" type="submit" id="btn"><i
+                        class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid text-center">
+        <h1><b>THE</b> BRAND</h1>
+        <p>COMPANY SLOGAN GOES HERE</p>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 pr-5 part_1 d-flex flex-column">
+                <img src="../img/2-The-Brand.jpg" alt="replace"><br>
+                <img src="../img/2-The-Brand2.jpg" alt="replace"><br>
+                <p style="font-size: 18px;">OUR VALUES, VISION AND STRATEGY</p>
+                <p style="font-size: 13px;">THE ABOVE IMAGE WOULD BE A GREAT PLACE FOR AN ADVERTISING VIDEO</p>
+                <p style="font-size: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+                    quasi
+                    laborum officiis corrupti
+                    consequuntur quisquam ab impedit et accusamus! Recusandae illo explicabo quis, voluptatem
+                    quibusdam
+                    sit
+                    laborum sint asperiores repudiandae corrupti ex quaerat, quod nisi ducimus soluta incidunt. Quis
+                    eos
+                    expedita et sit consectetur necessitatibus aliquam error tenetur iusto nulla!</p>
+            </div>
+            <div class="col-12 col-lg-6 pl-5 part_2 d-flex flex-column">
+                <br>
+                <br>
+                <br>
+                <p style="font-size: 18px;">HAND DESIGNED CLOTHING</p>
+                <p style="font-size: 13px;">ESTABLISHED IN 2013, AVENUE FASHION SED DICTUM ELIT VEL SAPIEN LUCTUS
+                    ERAS
+                </p>
+                <p style="font-size: 15px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
+                    accusamus, laborum, enim
+                    voluptatibus
+                    aliquid rem magni ipsum nihil, sapiente consectetur voluptatem fugiat placeat quod harum quia
+                    ipsa.
+                    Fugiat
+                    optio alias deserunt sapiente, excepturi tempora fuga obcaecati at molestias necessitatibus a
+                    quia
+                    adipisci
+                    rem architecto corrupti eum quam vero! Optio, dolorem.</p><br>
+                <img src="../img/2-The-Brand1.jpg" alt="replace"><br>
+                <p style="font-size: 18px;">ETHICAL TRADING</p>
+                <p style="font-size: 13px;">WE OVERSEE THE WORKING CONDITIONS OF THE PEOPLE IN THE SUPPLY CHAIN</p>
+                <p style="font-size: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam autem
+                    soluta
+                    doloribus adipisci tenetur
+                    quas
+                    porro quo facere! Neque eveniet natus, nemo dolorum sunt a dolores eius velit iste eaque quam
+                    harum
+                    veniam
+                    iusto corrupti sequi aliquam repudiandae eum quos? Similique ipsam recusandae accusantium non
+                    dolore,
+                    consequatur eos cupiditate voluptatem!</p>
+                <div class="d-flex justify-content-center">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="../img/2-The-Brand7.png" alt="replace">
+                        </div>
+                        <div class="col-4">
+                            <img src="../img/2-The-Brand8.png" alt="replace">
+                        </div>
+                        <div class="col-4">
+                            <img src="../img/2-The-Brand9.png" alt="replace">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bggray pt-5 pb-5 pl-sm-5 pl-1 pr-sm-5 pr-1 full">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg col-md col-6">
+                    <p><b>INFORMATION</b></p>
+                    <a id="link" class="d-block" href="../html/brand.html">The brand</a>
+                    <a id="link" href="../html/local stores.html" class="d-block">Local stores</a>
+                    <a id="link" href="../html/sign in.html" class="d-block">Customer service</a>
+                    <a id="link" href="../html/sign in.html" class="d-block">Privacy & cookies</a>
+                    <a id="link" href="../html/local stores.html" class="d-block">Site map</a>
+                </div>
+                <div class="col-lg col-md col-6">
+                    <p id="link"><b>WHY BUY FROM US</b></p>
+                    <a id="link" href="../html/local stores.html" class="d-block">Shipping & returns</a>
+                    <a id="link" href="../html/local stores.html" class="d-block">Secure shopping</a>
+                    <a id="link" href="../html/lookbook.html" class="d-block">Testimonials</a>
+                    <a id="link" href="../html/brand.html" class="d-block">Award winning</a>
+                    <a id="link" href="../html/brand.html" class="d-block">Ethical trading</a>
+                </div>
+                <div class="col-lg col-md col-6">
+                    <p><b>YOUR ACCOUNT</b></p>
+                    <a id="link" href="../html/sign in.html" class="d-block">Sign in</a>
+                    <a id="link" href="../html/sign in.html" class="d-block">Register</a>
+                    <a id="link" href="../html/product-view.html" class="d-block">View cart</a>
+                    <a id="link" href="../html/lookbook.html" class="d-block">View your lookbook</a>
+                    <a id="link" href="../html/product-view.html" class="d-block">Track an order</a>
+                    <a id="link" href="../html/brand.html" class="d-block">Update information</a>
+                </div>
+                <div class="col-lg col-md col-6">
+                    <p><b>LOOKBOOK</b></p>
+                    <a id="link" href="../html/lookbook.html" class="d-block">Latest posts</a>
+                    <a id="link" href="../html/lookbook.html" class="d-block">Men's lookbook</a>
+                    <a id="link" href="../html/lookbook.html" class="d-block">Women's lookbook</a>
+                    <a id="link" href="../html/lookbook.html" class="d-block">Lookbook RSS feed</a>
+                    <a id="link" href="../html/lookbook.html" class="d-block">View your lookbook</a>
+                    <a id="link" href="../html/lookbook.html" class="d-block">Delete your lookbook</a>
+                </div>
+                <div class="col-lg col-md col-6">
+                    <p><b>CONTACT DETAILS</b></p>
+                    <p>Head office: Avenue Fashion, 180-182 Regent Street London</p>
+                    <a id="link" href="tel:0123456789" class="d-block">Telephone: 0123-456-789</a>
+                    <a id="link" href="mailto:support@yourwebsite.com" class="d-block">Email:
+                        support@yourwebsite.com</a>
+                </div>
+            </div>
+            <div class="row pl-sm-5 pl-1 pr-sm-5 pr-1">
+                <div
+                    class="col bg-dark text-white text-center p-sm-3 p-1 mr-md-4 mr-1 d-flex justify-content-center align-items-center flex-wrap">
+                    <p class="h2 full"><b>AWARD WINNER</b></p>
+                    <p class="h2">FASHION AWARDS 2016</p>
+                </div>
+                <div
+                    class="col bg-primary text-white text-center p-sm-3 p-1 d-flex justify-content-center align-items-center">
+                    <i class="fa-brands fa-facebook-f h3 m-sm-4 m-1"></i><i
+                        class="fa-brands fa-twitter h3 m-sm-4 m-1"></i><i
+                        class="fa-brands fa-instagram h3 m-sm-4 m-1"></i><i
+                        class="fa-brands fa-pinterest h3 m-sm-4 m-1"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-dark text-secondary p-2">
+        <div class="row">
+            <div class="col text-center">
+                © 2016 Avenue Fashion™
+            </div>
+            <div class="col pl-5">
+                <p class="d-inline mr-5">Design by RobbyDesigns.com</p>
+                <p class="d-inline">Dev by Loremipsum.com</p>
+            </div>
+        </div>
+    </div>
+</body>

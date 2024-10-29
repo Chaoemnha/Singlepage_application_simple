@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <title>local store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/local store.css">
+</head>
+
+<body>
+
+    <div class="container-fluid bg-dark">
+        <ul class="nav d-block ">
+            <div class="row">
+                <div class=" col-md col-4">
+                    <li class="nav-item mr-0">
+                        <p class="after1 nav-link widthinherit m-0 text-secondary pl-0 pr-0">Curentcy: <select
+                                class="text-secondary border-0 bg-dark p-0">
+                                <option value="dpb" class="p-0">DPB</option>
+                                <option value="gpd">GPD</option>
+                                <option value="cms">CMS</option>
+                            </select></p>
+                    </li>
+                </div>
+                <div class="col-md col-8 p-0">
+                    <li class="nav-item d-inline">
+                        <a class="nav-link d-inline-block text-secondary" href="./sing up.html">Register</a>
+                    </li>
+                    <li class="nav-item  d-inline-block">
+                        <a class="nav-link d-inline-block text-secondary pl-0 pr-0" href="./sing up.html">Sign in</a>
+                    </li>
+                    <li class="nav-item ml-lg-3 d-inline-flex align-items-center pr-sm-2 pl-sm-2 heightover ">
+                        <a class="nav-link beforenafter pr-0 pl-0  pt-2 pb-auto text-secondary" href="#"> <i
+                                class="fa-solid fa-cart-shopping"></i>
+                            <select class="text-secondary border-0 bg-dark p-0">
+                                <option value="dpb" class="p-0">Empty</option>
+                                <option value="gpd">GPD</option>
+                                <option value="cms">CMS</option>
+                            </select>
+
+                        </a>
+                    </li>
+                </div>
+            </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-white navbar-white ">
+        <!-- Brand/logo -->
+
+        <a class="navbar-brand text-dark" href="home.html"><b>AVENUE</b> FASHION</a>
+        <button class="navbar-toggler navbar-toggler-right bg-white "
+            style="width: 30px !important;height: 30px !important;" type="button" data-toggle="collapse"
+            data-target="#collapsibleNavbar">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse mr-5 " id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-item dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">MENS</a>
+                    <div class="dropdown-menu p-3" id="drop">
+                        <div class="row justify-content-center">
+                            <div class="col-6">
+                                <b>CASUALS</b>
+                                <ul>
+                                    <li><a class="dropdown-item" href="./lookbook.html">Jackets</a></li>
+                                    <li><a class="dropdown-item" href="./lookbook.html">Hoodies & Sweatshirts</a></li>
+                                    <li><a class="dropdown-item" href="./lookbook.html">Polo Shirt</a></li>
+                                    <li><a class="dropdown-item" href="./lookbook.html">Sportswear</a></li>
+                                    <li><a class="dropdown-item" href="./lookbook.html">Trousers & Chinos</a></li>
+                                    Trousers & Chinos
+                                    <li><a class="dropdown-item" href="./lookbook.html">T-Shirts</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <b>Formal</b>
+                                <ul>
+                                    <li><a class="dropdown-item" href="./lookbook.html">Jackets</a></li>
+                                    <li><a class="dropdown-item" href="./lookbook.html">Shirts</a></li>
+                                    <li><a class="dropdown-item" href="./lookbook.html">Suit</a></li>
+                                    <li><a class="dropdown-item" href="./lookbook.html">Trousers</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-11 bg-dark text-center text-white mt-2 p-3">
+                                AUTUMN SALE!<br> UP TO 50% OFF
+                            </div>
+
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-item dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">WOMENS</a>
+                    <div class="dropdown-menu p-3" id="drop">
+                        <div class="row justify-content-center">
+                            <div class="col-6">
+                                <b>CASUALS</b>
+                                <ul>
+                                    <li><a class="dropdown-item" href="./lookbook.html">Jackets</a></li>
+                                    <li><a class="dropdown-item" href="./lookbook.html">Hoodies & Sweatshirts</a></li>
+                                    <li><a class="dropdown-item" href="./lookbook.html">Polo Shirt</a></li>
+                                    <li><a class="dropdown-item" href="./lookbook.html">Sportswear</a></li>
+                                    <li><a class="dropdown-item" href="./lookbook.html">Trousers & Chinos</a></li>
+                                    Trousers & Chinos
+                                    <li><a class="dropdown-item" href="./lookbook.html">T-Shirts</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <b>Formal</b>
+                                <ul>
+                                    <li><a class="dropdown-item" href="./lookbook.html">Jackets</a></li>
+                                    <li><a class="dropdown-item" href="./lookbook.html">Shirts</a></li>
+                                    <li><a class="dropdown-item" href="./lookbook.html">Suit</a></li>
+                                    <li><a class="dropdown-item" href="./lookbook.html">Trousers</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-11 bg-dark text-center text-white mt-2 p-3">
+                                AUTUMN SALE!<br> UP TO 50% OFF
+                            </div>
+
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-item dropdown-toggle" href="./brand.html" id="navbardrop" data-toggle="dropdown">THE
+                        BRAND</a>
+                    <div class="dropdown-menu p-3" id="drop">
+                        <div class="row justify-content-center">
+                            <div class="col-12 text-center">
+                                <a href="./brand.html" class="dropdown-item d-inline"><b>OUR VALUES, VISION ...</b></a>
+                            </div>
+                            <div class="col-12 text-center mt-4">
+                                <a href="./brand.html" class="dropdown-item d-block"><b>HAND DESIGNED CLOTHING</b></a>
+                            </div>
+                            <div class="col-12 text-center mt-4">
+                                <a href="./brand.html" class="dropdown-item d-block"><b>ETHICAL TRADING</b></a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="./local stores.html">LOCAL STORES</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-item dropdown-toggle mr-5" href="#" id="navbardrop" data-toggle="dropdown">LOOK
+                        BOOK</a>
+                    <div class="dropdown-menu p-3" id="drop">
+                        <div class="row justify-content-center">
+                            <div class="col-6">
+                                <b>OUR LOOKBOOKS</b>
+                                <ul>
+                                    <li><a class="dropdown-item" href="./lookbook.html">Latest Posts (mixed)</a></li>
+                                    <li><a class="dropdown-item" href="./lookbook.html">Men's Lookbook</a></li>
+                                    <li><a class="dropdown-item" href="./lookbook.html">Women's Lookbook</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <b>YOUR LOOKBOOK</b>
+                                <ul>
+                                    <li><a class="dropdown-item" href="./lookbook.html">View and Edit</a></li>
+                                    <li><a class="dropdown-item" href="./lookbook.html">Share</a></li>
+                                    <li><a class="dropdown-item" href="./lookbook.html">Delete</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-11 bg-dark text-center text-white mt-2 p-3">
+                                AUTUMN SALE!<br> UP TO 50% OFF
+                            </div>
+
+                        </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 ">
+                <input class="form-control " id="search" type="text" placeholder="Search...">
+                <button class="btn btn-white" type="submit" id="btn"><i
+                        class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+    </nav>
+    <div class="text-center headpic text-white full p-0">
+        <div class="container-fluid d-flex align-items-center" id="bg-head">
+            <div class=" container ">
+                <span class="h1-head">LOCAL
+                </span><span class="toave">STORE</span>
+                <br>
+                <p class=" txt-head">FIND STORE NEED YOU</p>
+            </div>
+        </div>
+    </div>
+    <!-- body content local store -->
+    <div class="container-fluid mt-3">
+        <div class="container mb-5">
+            <div class="row justify-content-center">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 mb-3">
+                    <h2 class="txt_h2">
+                        Hà Nội
+                    </h2>
+                    <b class="txt_b">
+                        Thủ đô, thành phố trực thuộc trung ương
+                    </b>
+                    <p class="txt_p">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe earum at sunt
+                        necessitatibus.
+                        Maxime libero consequatur rem aut ratione fugiat vitae veniam voluptate debitis, tempora
+                        sequi
+                        tempore vero aliquam eius dignissimos
+                    </p>
+                    <button id="view1" class=" btn btn-sm  btn-outline-secondary">VIEW DETAILS</button>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 mb-3">
+                    <h2 class="txt_h2">
+                        Hải Phòng
+                    </h2>
+                    <b class="txt_b">
+                        Thành phố cảng quan trọng, trung tâm công nghiệp, cảng biển.
+                    </b>
+                    <p class="txt_p">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat repellendus, sunt dolore
+                        modi
+                        iure quam, voluptatum cupiditate unde vero aliquam eius dignissimos voluptas soluta,
+                        consectetur
+                        quod suscipit? Laborum,.
+                    </p>
+                    <button id="view2" class=" btn btn-sm btn-outline-secondary">VIEW DETAILS</button>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 mb-3">
+                    <h2 class="txt_h2">
+                        TP.Hồ Chí Minh
+                    </h2>
+                    <b class="txt_b">
+                        Thành phố lớn nhất Việt Nam và là một siêu đô thị trong tương lai gần.
+                    </b>
+                    <p class="txt_p">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore numquam aliquam voluptas
+                        corporis harum modi deleniti soluta hic voluptate! Obcaecati labore perspiciatis odit non
+                        veniam
+                        atque aperiam culpa harum expedita.
+                    </p>
+                    <button id="view3" class=" btn btn-sm  btn-outline-secondary">VIEW DETAILS</button>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- content_view details -->
+    <div class="container-fluid" id="view">
+        <div id="hanoi" class="container-fluid ">
+            <div class="row mb-5">
+                <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 p-0">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59587.94638120037!2d105.79576387940806!3d21.022814759486046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2zSMOgIE7hu5lpLCBIb8OgbiBLaeG6v20sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1691076592460!5m2!1svi!2s"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-12 sm-12 col-xs-12" id="cl-4">
+                    <h2 class="txt_h2">
+                        Hà Nội
+                    </h2>
+                    <b class="txt_b">
+                        Thủ đô, thành phố trực thuộc trung ương và là một trong hai đô thị loại đặc biệt.
+                    </b>
+                    <p class="txt_p">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe earum at sunt
+                        necessitatibus.
+                        Maxime libero consequatur rem aut ratione fugiat vitae veniam voluptate debitis, tempora
+                        sequi
+                        tempore facere natus voluptatem!
+                    </p>
+                    <ul class="txt_p">
+                        <li>
+                            <img src="../img/3-Local-Stores1.png">
+                            Lăng Chủ Tịch Hồ Chí Minh
+
+                        </li>
+                        <li>
+                            <img src="../img/3-Local-Stores2.png">
+                            <a href="tel://123-456-798" class="txt_p">123-456-798</a>
+                        </li>
+                        <li>
+                            <img src="../img/3-Local-Stores3.png">
+                            <a href="https://www.w3schools.com/html/html_styles.asp" class="txt_p">www.yourweb.com</a>
+                        </li>
+                        <li>
+                            <img src="../img/3-Local-Stores4.png">
+                            <a href="mailto:suport@gmail.com" class="txt_p">suport@gmail.com</a>
+                        </li>
+                        <li>
+                            <img src="../img/3-Local-Stores5.png">
+                            Monday-Friday 9am to 6pm Saturday 10am to 6pm Sunday 10am to 2am
+                        </li>
+                    </ul>
+                    <i class="fa-brands fa-facebook fa-xl" style="color: #666666;"></i>
+                    <i class="fa-brands fa-square-twitter fa-xl" style="color: #666666;"></i>
+                    <i class="fa-brands fa-instagram fa-xl" style="color: #666666;"></i>
+                    <i class="fa-brands fa-pinterest fa-xl" style="color: #666666;"></i>
+                </div>
+            </div>
+        </div>
+        <div id="haiphong" class="container-fluid">
+            <div class="row mb-5">
+                <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12  p-0">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59658.0126865264!2d106.65754687831001!3d20.846812137580528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a7af39e3f1ad3%3A0xa5ffc85ff87a07e8!2zSOG6o2kgUGjDsm5nLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1691076905260!5m2!1svi!2s"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-12 sm-12 col-xs-12" id="cl-4">
+                    <h2 class="txt_h2">
+                        Hải Phòng
+                    </h2>
+                    <b class="txt_b">
+                        Thành phố cảng quan trọng, trung tâm công nghiệp, cảng biển.
+                    </b>
+                    <p class="txt_p">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat repellendus, sunt dolore
+                        modi
+                        iure quam, voluptatum cupiditate unde vero aliquam eius dignissimos voluptas soluta,
+                        consectetur
+                        quod suscipit? Laborum,.
+                    </p>
+                    <ul class="txt_p">
+                        <li>
+                            <img src="../img/3-Local-Stores1.png">
+                            TP.Hải Phòng
+
+                        </li>
+                        <li>
+                            <img src="../img/3-Local-Stores2.png">
+                            <a href="tel://123-456-798" class="txt_p">123-456-798</a>
+                        </li>
+                        <li>
+                            <img src="../img/3-Local-Stores3.png">
+                            <a href="https://www.w3schools.com/html/html_styles.asp" class="txt_p">www.yourweb.com</a>
+                        </li>
+                        <li>
+                            <img src="../img/3-Local-Stores4.png">
+                            <a href="mailto:suport@gmail.com" class="txt_p">suport@gmail.com</a>
+                        </li>
+                        <li>
+                            <img src="../img/3-Local-Stores5.png">
+                            Monday-Friday 9am to 6pm Saturday 10am to 6pm Sunday 10am to 2am
+                        </li>
+                    </ul>
+                    <i class="fa-brands fa-facebook fa-xl" style="color: #666666;"></i>
+                    <i class="fa-brands fa-square-twitter fa-xl" style="color: #666666;"></i>
+                    <i class="fa-brands fa-instagram fa-xl" style="color: #666666;"></i>
+                    <i class="fa-brands fa-pinterest fa-xl" style="color: #666666;"></i>
+                </div>
+            </div>
+        </div>
+        <div id="HCM" class="container-fluid">
+            <div class="row mb-5">
+                <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12   p-0">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d501725.41844340577!2d106.36556361999956!3d10.755292863941623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529292e8d3dd1%3A0xf15f5aad773c112b!2zSOG7kyBDaMOtIE1pbmgsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1691076950346!5m2!1svi!2s"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-12 sm-12 col-xs-12" id="cl-4">
+                    <h2 class="txt_h2">
+                        TP.Hồ Chí Minh
+                    </h2>
+                    <b class="txt_b">
+                        Thành phố lớn nhất Việt Nam và là một siêu đô thị trong tương lai gần.
+                    </b>
+                    <p class="txt_p">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore numquam aliquam voluptas
+                        corporis harum modi deleniti soluta hic voluptate! Obcaecati labore perspiciatis odit non
+                        veniam
+                        atque aperiam culpa harum expedita.
+                    </p>
+                    <ul class="txt_p">
+                        <li>
+                            <img src="../img/3-Local-Stores1.png">
+                            DInh Độc Lập
+
+                        </li>
+                        <li>
+                            <img src="../img/3-Local-Stores2.png">
+                            <a href="tel://123-456-798" class="txt_p">123-456-798</a>
+                        </li>
+                        <li>
+                            <img src="../img/3-Local-Stores3.png">
+                            <a href="https://www.w3schools.com/html/html_styles.asp" class="txt_p">www.yourweb.com</a>
+                        </li>
+                        <li>
+                            <img src="../img/3-Local-Stores4.png">
+                            <a href="mailto:suport@gmail.com" class="txt_p">suport@gmail.com</a>
+                        </li>
+                        <li>
+                            <img src="../img/3-Local-Stores5.png">
+                            Monday-Friday 9am to 6pm Saturday 10am to 6pm Sunday 10am to 2am
+                        </li>
+                    </ul>
+                    <i class="fa-brands fa-facebook fa-xl" style="color: #666666;"></i>
+                    <i class="fa-brands fa-square-twitter fa-xl" style="color: #666666;"></i>
+                    <i class="fa-brands fa-instagram fa-xl" style="color: #666666;"></i>
+                    <i class="fa-brands fa-pinterest fa-xl" style="color: #666666;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="bggray pt-5 pb-5 pl-5 pr-5 full">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg  col-6 col-md-6">
+                    <p><b>INFORMATION</b></p>
+                    <a id="link" class="d-block" href="band.html">The brand</a>
+                    <a id="link" href="#" class="d-block">Local stores</a>
+                    <a id="link" href="sing up.html" class="d-block">Customer service</a>
+                    <a id="link" href="sing up.html" class="d-block">Privacy & cookies</a>
+                    <a id="link" href="local stores.html" class="d-block">Site map</a>
+                </div>
+                <div class="col-lg  col-6 col-md-6">
+                    <p><b>WHY BUY FROM US</b></p>
+                    <a id="link" href="./product-view.html" class="d-block">Shipping & returns</a>
+                    <a id="link" href="./local stores.html" class="d-block">Secure shopping</a>
+                    <a id="link" href="./brand.html" class="d-block">Testimonials</a>
+                    <a id="link" href="./brand.html" class="d-block">Award winning</a>
+                    <a id="link" href="./brand.html" class="d-block">Ethical trading</a>
+                </div>
+                <div class="col-lg  col-6 col-md-6">
+                    <p><b>YOUR ACCOUNT</b></p>
+                    <a id="link" href="./sing up.html" class="d-block">Sign in</a>
+                    <a id="link" href="./sing up.html" class="d-block">Register</a>
+                    <a id="link" href="./product-view.html" class="d-block">View cart</a>
+                    <a id="link" href="./lookbook.html" class="d-block">View your lookbook</a>
+                    <a id="link" href="./product-view.html" class="d-block">Track an order</a>
+                    <a id="link" href="./brand.html" class="d-block">Update information</a>
+                </div>
+                <div class="col-lg  col-6 col-md-6">
+                    <p><b>LOOKBOOK</b></p>
+                    <a id="link" href="./lookbook.html" class="d-block">Latest posts</a>
+                    <a id="link" href="./lookbook.html" class="d-block">Men's lookbook</a>
+                    <a id="link" href="./lookbook.html" class="d-block">Women's lookbook</a>
+                    <a id="link" href="./lookbook.html" class="d-block">Lookbook RSS feed</a>
+                    <a id="link" href="./lookbook.html" class="d-block">View your lookbook</a>
+                    <a id="link" href="./lookbook.html" class="d-block">Delete your lookbook</a>
+                </div>
+                <div class="col-lg col-md col col-md-6 pb-2">
+                    <p><b>CONTACT DETAILS</b></p>
+                    <a id="link" href="./local stores.html">Head office: Avenue Fashion, 180-182 Regent Street
+                        London</a>
+                    <a id="link" href="tel:0123456789" class="d-block">Telephone: 0123-456-789</a>
+                    <a id="link" href="mailto:support@yourwebsite.com" class="d-block">Email:
+                        support@yourwebsite.com</a>
+                </div>
+            </div>
+            <div class="row">
+                <div
+                    class="col bg-dark text-white text-center p-sm-3 p-0 mr-4 d-flex justify-content-center align-items-center flex-wrap">
+                    <p class="h2 full"><b>AWARD WINNER</b></p>
+                    <p class="h2">FASHION AWARDS 2016</p>
+                </div>
+                <div
+                    class="col bg-primary text-white text-center p-sm-3 p-0 d-flex justify-content-center align-items-center">
+                    <i class="fa-brands fa-facebook-f h3 m-sm-4 m-1"></i>
+                    <i class="fa-brands fa-twitter h3 m-sm-4 m-1"></i>
+                    <i class="fa-brands fa-instagram h3 m-sm-4 m-1"></i>
+                    <i class="fa-brands fa-pinterest h3 m-sm-4 m-1"></i>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-dark text-secondary p-2">
+        <div class="row">
+            <div class="col text-center">
+                © 2016 Avenue Fashion™
+            </div>
+            <div class="col pl-5">
+                <p class="d-inline mr-5">Design by RobbyDesigns.com</p>
+                <p class="d-inline">Dev by Loremipsum.com</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQ-view details -->
+    <script>
+        $("#haiphong").hide();
+        $("#HCM").hide();
+        $(document).ready(function () {
+            $("#view1").click(function () {
+                $("#hanoi").show();
+                $("#haiphong").hide();
+                $("#HCM").hide();
+            });
+            $("#view2").click(function () {
+                $("#hanoi").hide();
+                $("#haiphong").show();
+                $("#HCM").hide();
+            });
+            $("#view3").click(function () {
+                $("#hanoi").hide();
+                $("#haiphong").hide();
+                $("#HCM").show();
+            });
+
+        });
+    </script>
+</body>
+
+</html>
